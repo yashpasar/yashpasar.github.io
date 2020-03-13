@@ -1758,6 +1758,28 @@ input, select, textarea {
 
 		}
 
+		@media only screen and (max-width: 750px) {
+		    #experience-timeline:before, #experience-timeline:after {
+		        left:23px
+		    }
+
+		    .vtimeline-date {
+		        width: auto;
+		        text-align: left;
+		        position: relative;
+		        margin-bottom: 15px;
+		        display: block;
+		        margin-left:70px
+		    }
+
+		    .vtimeline-icon {
+		        margin-left:0
+		    }
+
+		    .vtimeline-content {
+		        margin-left:70px
+		    }
+		}		
 /* Section/Article */
 
 	section.special, article.special {
@@ -2035,6 +2057,56 @@ input, select, textarea {
 			font-family: 'Font Awesome 5 Brands';
 		}
 
+
+/*Education*/
+		#education {
+    padding: 50px 15px 20px 15px;
+    border-bottom: 1px solid #dcd9d9;
+    text-align:center
+}
+
+#education h2 {
+    color: #374054;
+    margin-bottom:50px
+}
+
+.education-block {
+    max-width: 700px;
+    margin: 0 auto 30px auto;
+    padding: 15px;
+    border: 1px solid #dcd9d9;
+    text-align:left
+}
+
+.education-block h3 {
+    font-weight: 500;
+    float: left;
+    margin: 0;
+    color:#374054
+}
+
+.education-block span {
+    color: #74808a;
+    float:right
+}
+
+.education-block h4 {
+    color: #74808a;
+    clear: both;
+    font-weight: 500;
+    margin:0 0 15px 0
+}
+
+.education-block p, .education-block ul {
+    margin: 0;
+    color: #74808a;
+    font-size:0.9em
+}
+
+.education-block ul {
+    padding:0 0 0 15px
+}		
+
 /*Timeline*/
 		.timeline {
 			position: relative;
@@ -2046,20 +2118,20 @@ input, select, textarea {
 		  .timeline::after {
 			content: '';
 			position: absolute;
-			width: 6px;
+			width: 5px;
 			background-color: black;
 			top: 0;
 			bottom: 0;
-			left: 50%;
+			left: 56.5%;
 			margin-left: -3px;
 		}
 		  
 		  /* Container around content */
 		  .containert {
-			padding: 10px 40px;
+			padding: 10px 30px;
 			position: relative;
 			background-color: inherit;
-			width: 50%;
+			width: 57%;
 		}
 		  
 		  /* The circles on the timeline */
@@ -2078,12 +2150,12 @@ input, select, textarea {
 		  
 		  /* Place the container to the left */
 		  .leftt {
-			left: 0;
+			left: -1%;
 	    }
 		  
 		  /* Place the container to the right */
 		  .rightt {
-			left: 50%;
+			left: 57%;
 		}
 		  
 		  /* Add arrows to the left container (pointing right) */
@@ -2685,7 +2757,7 @@ input, select, textarea {
 		justify-content: space-between;
 		background-color: #1f1815;
 		background-attachment: scroll,scroll;
-		background-image: url("images/overlay.png"), url("../../images/bg1.jpg");
+		background-image: url("images/overlay.png"), url("/Users/yashpasar/Desktop/MSIM/Yash's Portfolio/images/bg1.jpg");
 		background-position: top left, top left;
 		background-repeat: repeat, no-repeat;
 		background-size: auto, 150%;
@@ -2737,7 +2809,7 @@ input, select, textarea {
 
 		#header .icons {
 		margin: 1em 0 0 0;
-		}
+	}
 
 		#header .icons a {
 			color: rgba(255, 255, 255, 0.4);
@@ -3178,10 +3250,10 @@ input, select, textarea {
 			#footer {
 				background-attachment: scroll;
 				background-color: #1f1815;
-				background-image: url("images/overlay.png"), url("../../images/bg.jpg");
-				background-position: top left,						bottom center;
-				background-repeat: repeat,							no-repeat;
-				background-size: auto,							cover;
+				background-image: url("images/overlay.png"), url("images/bg1.jpg");
+				background-position: top left, bottom center;
+				background-repeat: repeat, no-repeat;
+				background-size: auto, cover;
 				bottom: auto;
 				left: auto;
 				padding: 4em 4em 6em 4em;
